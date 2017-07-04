@@ -9,7 +9,11 @@ class Options extends React.Component {
   render() {
     return (
       <div className="Options">
-        <button onClick={() => this.props.changeRoute('LoginWithTwitter')}>Login With Twitter</button>
+        <h2>You choice</h2>
+
+        <div>
+          <button onClick={() => this.props.changeRoute('LoginWithTwitter')}>Login With Twitter</button>
+        </div>
       </div>
     );
   }

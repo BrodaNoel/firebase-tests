@@ -22,7 +22,7 @@ class App extends Component {
             (route => {
               switch (route) {
                 case 'LoginWithTwitter':
-                  return <LoginWithTwitter></LoginWithTwitter>;
+                  return <LoginWithTwitter changeRoute={this.changeRoute}></LoginWithTwitter>;
                 case 'Options':
                 default:
                   return <Options changeRoute={this.changeRoute}></Options>;
