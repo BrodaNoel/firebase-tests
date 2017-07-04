@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import LoginWithTwitter from 'containers/LoginWithTwitter';
+import KeepSync from 'containers/KeepSync';
 import Options from 'containers/Options';
 import './App.css';
 
@@ -21,6 +22,8 @@ class App extends Component {
           {
             (route => {
               switch (route) {
+                case 'KeepSync':
+                  return <KeepSync changeRoute={this.changeRoute}></KeepSync>;
                 case 'LoginWithTwitter':
                   return <LoginWithTwitter changeRoute={this.changeRoute}></LoginWithTwitter>;
                 case 'Options':

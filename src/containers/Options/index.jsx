@@ -14,6 +14,10 @@ class Options extends React.Component {
         <div>
           <button onClick={() => this.props.changeRoute('LoginWithTwitter')}>Login With Twitter</button>
         </div>
+
+        <div>
+          <button onClick={() => this.props.changeRoute('KeepSync')}>Keep Sync between frontend and Firebase realtime database var</button>
+        </div>
       </div>
     );
   }
