@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import firebase from 'firebase';
+import keepTokenUpdated from 'events/keepTokenUpdated';
 
 // polyfil
 shim();
@@ -19,6 +20,8 @@ var config = {
 };
 
 firebase.initializeApp(config);
+
+keepTokenUpdated.apply();
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
