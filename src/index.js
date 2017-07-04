@@ -1,9 +1,13 @@
+import { shim } from 'promise.prototype.finally';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import firebase from 'firebase';
+
+// polyfil
+shim();
 
 var config = {
   apiKey: "AIzaSyDMc_FXTVNCIZ-Gik9ccrzpoMgcEIxxzfs",
