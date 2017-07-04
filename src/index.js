@@ -10,6 +10,7 @@ import keepTokenUpdated from 'events/keepTokenUpdated';
 // polyfil
 shim();
 
+// Feature: Init Firebase
 var config = {
   apiKey: "AIzaSyDMc_FXTVNCIZ-Gik9ccrzpoMgcEIxxzfs",
   authDomain: "fir-tests-f81de.firebaseapp.com",
@@ -21,6 +22,7 @@ var config = {
 
 firebase.initializeApp(config);
 
+// Feature: Keep Firebase Token Updated
 keepTokenUpdated.apply();
 
 ReactDOM.render(<App />, document.getElementById('root'));

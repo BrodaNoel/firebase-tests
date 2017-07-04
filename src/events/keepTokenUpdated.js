@@ -1,3 +1,4 @@
+// Feature: Keep Firebase Token Updated
 import firebase from 'firebase';
 import utils from 'utils';
 
